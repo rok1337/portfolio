@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="descripcion" content="protafolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                line-height: 1.5;
+                font-size: 16px;
+                padding: 0 10px;
+                margin: 50px auto;
+                max-width: 650px;
+            }
+            main{
+                max-width: 42em;
+                margin: 15 auto;
+            }
+        </style>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+     
+             if (window.location.search.indexOf('uwu') > -1) {
+            // Crear la imagen y asignar propiedades
+            var img = document.createElement('img');
+            img.src = 'D:/img/a.jpg'; // Cambia a la URL de tu imagen
+            img.alt = 'Imagen relacionada con UWU';
+            img.style.maxWidth = '300px';
+
+            var h1 = document.querySelector('h1');
+            if (h1) {
+                h1.parentNode.replaceChild(img, h1); // Reemplaza el h1 con la imagen
+            }
+
+                // Crear un párrafo con contenido
+            var p = document.createElement('p');
+            p.textContent = 'Este es un mensaje personalizado que aparece cuando la URL contiene "uwu".';
+
+            document.body.appendChild(p);
+        }
+            });
+      
+        </script>
+        <title>Facu</title>
+    </head>
+    <body>
+        <main style="margin-top: 4rem;">
+            <h1>Facu</h1>
+            <p>Hola. Soy Facu. Encantado de conocerte.</p>
+            <p>
+                Soy un simple estudiante de la LICENCIATURA EN CIENCIAS DE LA COMPUTACIÓN.
+                Unas de mis cualidades es que soy muy curioso en lo que hago y cuando quiero aprender algo voy 
+                a fondo. Me gusta aprender cosas nuevas.
+            </p>
+            <h3>Mis links: </h3>
+            <ul>
+                <li><a href="https://x.com/fsc1ence" target="_blank">X</a></li>
+                <li><a href="https://www.linkedin.com/in/f-giovanella/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/rok1337" target="_blank">Git hub</a></li>
+                <li><a href="mailto:giovanellafacu@gmail.com">Gmail</a></li>
+            </ul>
+
+        </main>
+    </body>
+
+</html>
