@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html lang="es">
+<h<html lang="es">
     <head>
-        <meta name="descripcion" content="protafolio">
+        <meta charset="UTF-8">
+        <meta name="descripcion" content="portafolio">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body{
-                line-height: 1.5;
+            body {
+                line-height: 1.6;
                 font-size: 16px;
                 padding: 0 10px;
                 margin: 50px auto;
                 max-width: 650px;
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
             }
-            main{
+            main {
                 max-width: 42em;
-                margin: 15 auto;
+                margin: 15px auto;
+                background: #fff;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+            h1, h3 {
+                color: #444;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            ul li {
+                margin: 5px 0;
+            }
+            ul li a {
+                text-decoration: none;
+                color: #1a73e8;
+            }
+            ul li a:hover {
+                text-decoration: underline;
             }
         </style>
         <script>
         document.addEventListener('DOMContentLoaded', function() {
-     
-             if (window.location.search.indexOf('uwu') > -1) {
-            // Crear la imagen y asignar propiedades
-            var img = document.createElement('img');
-            img.src = 'D:/img/a.jpg'; // Cambia a la URL de tu imagen
-            img.alt = 'Imagen relacionada con UWU';
-            img.style.maxWidth = '300px';
+            if (window.location.search.indexOf('uwu') > -1) {
+                var img = document.createElement('img');
+                img.src = 'D:/img/a.jpg';
+                img.alt = 'Imagen relacionada con UWU';
+                img.style.maxWidth = '300px';
 
-            var h1 = document.querySelector('h1');
-            if (h1) {
-                h1.parentNode.replaceChild(img, h1); // Reemplaza el h1 con la imagen
+                var h1 = document.querySelector('h1');
+                if (h1) {
+                    h1.parentNode.replaceChild(img, h1);
+                }
+
+                var p = document.createElement('p');
+                p.textContent = 'Este es un mensaje personalizado que aparece cuando la URL contiene "uwu".';
+                document.body.appendChild(p);
             }
-
-                // Crear un párrafo con contenido
-            var p = document.createElement('p');
-            p.textContent = 'Este es un mensaje personalizado que aparece cuando la URL contiene "uwu".';
-
-            document.body.appendChild(p);
-        }
-            });
-      
+        });
         </script>
         <title>Facu</title>
     </head>
     <body>
-        <main style="margin-top: 4rem;">
+        <main>
             <h1>Facu</h1>
             <p>Hola. Soy Facu. Encantado de conocerte.</p>
             <p>
@@ -55,11 +75,9 @@
             <ul>
                 <li><a href="https://x.com/fsc1ence" target="_blank">X</a></li>
                 <li><a href="https://www.linkedin.com/in/f-giovanella/" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/rok1337" target="_blank">Git hub</a></li>
+                <li><a href="https://github.com/rok1337" target="_blank">GitHub</a></li>
                 <li><a href="mailto:giovanellafacu@gmail.com">Gmail</a></li>
             </ul>
-
         </main>
     </body>
-
 </html>
